@@ -17,7 +17,7 @@ public class App
 		}
 		
 		public int n(){
-			int y = 0;
+			int y = 2;
 			return m(y);
 		}
 		
@@ -28,8 +28,10 @@ public class App
 		public static void main(String[] args) {
 			App t = new App();
 			int result1 = t.o()/t.n();
-			assert result1 !=0;
-			int result2 = t.n()/t.o();
+			if(result1 == 0){
+				throw new RuntimeException();
+			}
+			int result2 = t.n() * 2;
 			System.out.println("Hello world" + result1 + " " + result2);
 
 		}
