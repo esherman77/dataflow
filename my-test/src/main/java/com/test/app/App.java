@@ -22,14 +22,15 @@ public class App
 		}
 		
 		public int o(){
-			int y = 1;
+			int y = 0;
 			return m(y);
 		}
 		public static void main(String[] args) {
 			App t = new App();
 			int result1 = t.o()/t.n();
+			assert result1 !=0;
 			int result2 = t.n()/t.o();
-			System.out.println("Hello world!" + result1 + " " + result2);
+			System.out.println("Hello world" + result1 + " " + result2);
 
 		}
 		
