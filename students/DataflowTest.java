@@ -4,7 +4,7 @@ package students;
  * Hello world!
  *
  */
-public class Test 
+public class DataflowTest 
 {
 
 		public int m(int y){
@@ -35,7 +35,7 @@ public class Test
 			return x;
 		}
 		public static void main(String[] args) {
-			Test t = new Test();
+			Test t = new DataflowTest();
 			int x = Integer.parseInt(args[0]);
 			int result1 = t.o()/t.n();
 			int result2 = t.n()/t.k(x);
